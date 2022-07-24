@@ -5,9 +5,11 @@ Project 1: Polarized politics
 03/07/2022
 
 I. Introduction
+
 Polarization in politics has always been a topic of much analytical research, especially in America where the central government, with its two-party system. This is because the two parties must work together cooperatively to implement a policy or pass a law. Therefore, the goal of this project is to use data from the U.S House of Representatives to analyze the voting behavior and polarization of the U.S House chamber over time. With this knowledge in mind, the results of this analysis will be of immense importance regarding helping the general public gain a more thorough understanding of the subject matter. Moreover, other skate holders such as politicians, political scientists and so on could also be interested in the resulting analysis. Because of that, one cannot overlook the sheer importance of this project. 
 
 II. Method explanation: 
+
 A/ Explaining the algorithm: 
 In order to complete the first part of the project, we divided our algorithm into three small components:
 1.	Determine whether a House roll call vote number from a given year is a party line vote: 
@@ -16,6 +18,7 @@ In order to complete the first part of the project, we divided our algorithm int
 •	In order to accomplish this task, we use the result of the step number but incorporate it in an iterations of loops in the range of the number of roll call votes for of the given year to count the number of party line votes. To make things simple, we assume the maximum number of roll calls for each year is 450. Then, we divide the number of party line votes with the 450 to get the fraction of votes.
 3.	Plotting the fraction of party line votes over time. 
 •	We use the results of step two to plot the results over the span of 20 years by iterating each year of the 20 years in a loop. For each iteration, we use the results of the previous step until the loop ends. The final result should be a complete plot of the fraction of party line votes over time with the fraction on the y-axis and the years on the x-axis. 
+
 B/ Algorithm implementations: 
 	Our program has 4 functions: main(), partyLine(), countPartyLine(), and plotPartyLine(). 
 	The main () function is where the program begins. We use it to call the partyLine function and the countPartyLine function with the input for a specific year and roll call number. 
@@ -47,5 +50,6 @@ Link to article: https://www.elonnewsnetwork.com/article/2022/03/cheat-sheet-pol
 This article discussed how polarization in recent years has increased with the author saying: “The overall share of Americans who express consistently conservative or liberal opinions has doubled over the past two decades.” And based on the resulting of the graph, we can see that from around 2013 to 2019, the general trend for fraction of party line votes increased by a large amount. This proves that the results of the news report are in accordance with the results of our analysis. The motivation of this news article is to discuss how and why polarization has been increasing. With that in mind, the similar results between the article and the plot shown in our analysis indicate that the general trend in American politics is that polarization has become more prevalent. 
 
 IV. Conclusion: 
+
 This project has helped us gain a deeper understanding of American politics and how polarized it is. With this knowledge in mind, we now realize the importance of investigating data and incorporating computation problem solving in data analysis. Such a large amount of data needs to be polished so that we only need to focus on the specific to formulate the correct conclusions and inferences. That is what this project has guided us to do. Moreover, we also learn that we must be thorough when coming up with the algorithm and implementing it into Python as the code for certain parts of the project took quite some time to finish. This is our biggest challenge so far in terms of solving the problems at hand and creating an efficient algorithm to the best of our understanding. 
 
