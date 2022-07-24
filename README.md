@@ -11,18 +11,25 @@ Polarization in politics has always been a topic of much analytical research, es
 II. Method explanation: 
 
 A/ Explaining the algorithm: 
+
 In order to complete the first part of the project, we divided our algorithm into three small components:
+
 1.	Determine whether a House roll call vote number from a given year is a party line vote: 
 •	To do this, we must create an input so that people can access a roll call vote number for a specific year of their choice by manipulating the url for the website. Then, we search for specific strings containing the information regarding the voting information of Democrats and Republicans. To be more specific, we calculate the number of Democrats and Republicans who voted yes and no excluding votes that are recorded in other ways.
+
 2.	Calculate the fraction of party line votes: 
 •	In order to accomplish this task, we use the result of the step number but incorporate it in an iterations of loops in the range of the number of roll call votes for of the given year to count the number of party line votes. To make things simple, we assume the maximum number of roll calls for each year is 450. Then, we divide the number of party line votes with the 450 to get the fraction of votes.
+
 3.	Plotting the fraction of party line votes over time. 
 •	We use the results of step two to plot the results over the span of 20 years by iterating each year of the 20 years in a loop. For each iteration, we use the results of the previous step until the loop ends. The final result should be a complete plot of the fraction of party line votes over time with the fraction on the y-axis and the years on the x-axis. 
 
 B/ Algorithm implementations: 
-	Our program has 4 functions: main(), partyLine(), countPartyLine(), and plotPartyLine(). 
-	The main () function is where the program begins. We use it to call the partyLine function and the countPartyLine function with the input for a specific year and roll call number. 
+	
+Our program has 4 functions: main(), partyLine(), countPartyLine(), and plotPartyLine(). 
+The main () function is where the program begins. We use it to call the partyLine function and the countPartyLine function with the input for a specific year and roll call number. 
+	
 	The partyLine() functions take year and number as its parameters, both of which are integer values. This function is to find the party line votes in the House chamber and return whether or not a roll call number has party line votes (returns True) and if otherwise returns False. To do this, we must first initialize the URL for the website and manipulate it by combining it with the year and number variable so that we could access the desirable information. We also initialize and set the value of the necessary variables as 0 to calculate the number of Democrats and Republicans who voted and count the number of lines in the XML files. Then, we use a for loop to encode the XML files so that Python could understand it and count the number of lines. Next, we use another for loop to go through each line to find the information of voters in the Democratic and Republican Party who voted yes (Yea or Aye) and no (Nay and No) by finding the specific strings containing these information. When the loop ends, we determine whether or not each party has more than half its members voting in different ways. If so, we return True ( is party line vote) otherwise, we return False (not party line vote). 
+	
 	The countPartyLine() function is used to calculate the fraction of party line votes. To do this, we initialize the number of party line votes as zero. Then, we use a for loop in the range of the given year’s roll call vote numbers and call the result of the function partyLine. In each iteration, if the results of the previous function is true, we increment the number of party line votes by 1. When the loop ends, we divide the number of votes by the maximum number of votes for that given year. 
 	The plotPartyLine function takes no parameters and is only used to plot the fraction of party line votes. In order to do this, we use the results of the countPartyLine function in a for loop in the range of 20 years ( we decide to choose from 1999 to 2019). For each iteration, we call the results of the previous function and append to the list as well as append the value of the year to a list. When the loop ends, we plot both of these values on the same graph. 
 
