@@ -26,19 +26,24 @@ B/ Algorithm implementations:
 III. Results and analysis: 
 
 1. Investigate the Affordable Care Act and Drywall Safety Act.
+ 
  The vote on the Affordable Care act was a party line vote as in 2010, the year it was passed. We searched on the website provided in the project and tested all of the roll call numbers that were associated with this act and all of them proved that this was a party line vote. (111th Congress roll call number: 165,163,162,160,159) 
 Another vote that I care about is the Drywall Safety Act. It was a party line vote based on the result of our algorithm and also based on the result of the website. (112th congress roll call number 657)
 
 2. Fraction of party line vote over time (1999-2020).
+
 According to this graph, from 1999 to 2019, all of the years have more than 50% of their votes as party line votes. This means that the fraction of votes from all of the years all went along the party line vote. 
 
+![alt text](https://github.com/HoaTran2003/Project-_1_Voting_Trend/blob/main/Voting_trend_overtime.jpg)
 
 The plot shows that all of the years surveyed all followed the party line vote but with varying degree of differences. That is to say that the curve showing the fraction of party line votes fluctuates throughout the years, with the lowest fraction being around 60% in 2011 to a peak of around 90% in 2019. 
 At the beginning, we can see that the fraction of party line vote was around 0.7 and then it plummeted to 0.65 6 years later. After some fluctuations, the figure for this dropped to around 0.6 in 2011. However, from 2012 and onward the overall trend was that the fraction of party line votes was increasing at a steady rate with a few small declines in around 2016 and 2018. 
 ==> All of this information proves that American politics have always been polarized with many of its members possessing different political ideology. 
 
 3. Further investigation of voting behavior:
+
 Link to article: https://www.elonnewsnetwork.com/article/2022/03/cheat-sheet-political-polarization-elon-university-journalism-professor
+
 This article discussed how polarization in recent years has increased with the author saying: “The overall share of Americans who express consistently conservative or liberal opinions has doubled over the past two decades.” And based on the resulting of the graph, we can see that from around 2013 to 2019, the general trend for fraction of party line votes increased by a large amount. This proves that the results of the news report are in accordance with the results of our analysis. The motivation of this news article is to discuss how and why polarization has been increasing. With that in mind, the similar results between the article and the plot shown in our analysis indicate that the general trend in American politics is that polarization has become more prevalent. 
 
 IV. Conclusion: 
